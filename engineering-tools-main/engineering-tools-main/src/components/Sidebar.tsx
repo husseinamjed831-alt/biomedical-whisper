@@ -15,7 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   const menuItems = [
     { path: '/', icon: Home, label: t('nav.home') },
     { path: '/theory', icon: Book, label: t('nav.theory') },
-    { path: '/labs.html', icon: FlaskConical, label: t('nav.labs') },
+    { path: '/labs', icon: FlaskConical, label: t('nav.labs') },
     { path: '/exams', icon: FileText, label: t('nav.exams') },
     { path: '/joker', icon: HelpCircle, label: t('nav.joker') },
     { path: '/evaluation', icon: BarChart3, label: t('nav.evaluation') },
