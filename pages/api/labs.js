@@ -4,6 +4,7 @@ export default function handler(req, res) {
       {
         name: "Arduino Biomedical Lab",
         status: "active",
+        url: "https://wokwi.com/projects/new/arduino-uno?embed=1&sketch=blink",
         experiments: [
           "Heart Rate Monitor with Pulse Sensor",
           "ECG Signal Acquisition System",
@@ -13,6 +14,8 @@ export default function handler(req, res) {
       {
         name: "3D Printing Medical Lab",
         status: "active",
+        // صفحة وسيطة للـ model-viewer (نولّدها بالخطوة 2)
+        url: "/labs-embed/3d.html",
         experiments: [
           "Custom Prosthetic Hand Design",
           "3D Heart Model for Surgery Planning",
@@ -22,38 +25,26 @@ export default function handler(req, res) {
       {
         name: "DSP Lab",
         status: "active",
-        experiments: [
-          "Signal Filtering",
-          "Fourier Analysis",
-          "Biomedical Signal Processing"
-        ]
+        url: "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html",
+        experiments: ["Signal Filtering", "Fourier Analysis", "Biomedical Signal Processing"]
       },
       {
         name: "Virtual Anatomy & Physiology Lab",
         status: "active",
-        experiments: [
-          "3D Heart Model",
-          "Musculoskeletal Simulation",
-          "Organ Visualization"
-        ]
+        url: "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_en.html",
+        experiments: ["3D Heart Model", "Musculoskeletal Simulation", "Organ Visualization"]
       },
       {
         name: "Medical Imaging Lab",
         status: "active",
-        experiments: [
-          "MRI Simulation",
-          "CT Scan Reconstruction",
-          "X-ray Image Analysis"
-        ]
+        url: "https://viewer.ohif.org/",
+        experiments: ["MRI Simulation", "CT Scan Reconstruction", "X-ray Image Analysis"]
       },
       {
         name: "Biomechanics Lab",
         status: "active",
-        experiments: [
-          "Forces and Motion Simulation",
-          "Gait Analysis",
-          "Joint Mechanics"
-        ]
+        url: "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html",
+        experiments: ["Forces and Motion Simulation", "Gait Analysis", "Joint Mechanics"]
       }
     ]
   });
